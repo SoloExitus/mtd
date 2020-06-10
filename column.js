@@ -40,9 +40,9 @@ class Column{
         })
 
         Element.querySelector('.column-delet').addEventListener('click',function(event){
-            const Delet=Element;
+            const indexDelet=Element.getAttribute('order');
             Element.remove();
-            DeletColumn(Delet);
+            DeletColumn(indexDelet);
         })
 
         Element.addEventListener('dragstart',this.dragstart.bind(this));

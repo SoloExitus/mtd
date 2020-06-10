@@ -37,8 +37,8 @@ function ChangeOrderColumn(index){
   }
 }
 
-function DeletColumn(column){
-  const index=column.getAttribute('order')-1;
+function DeletColumn(indexDelet){
+  const index=indexDelet-1;
   const children = Array.from(document.querySelector('.columns').children);
   const last=children.length;
   console.log(children.length);

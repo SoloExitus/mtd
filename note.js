@@ -95,10 +95,10 @@ class Note{
             }
             UpDateColumn(this.Element.closest('.column'));
         }else{
-            const parent=this.Element.closest('.column');
+            const Draggedparent=Note.dragged.closest('.column');
             this.Element.parentElement.insertBefore(Note.dragged,this.Element);
-            UpDateColumn(Note.dragged.closest('.column'));
-            UpDateColumn(parent);
+            UpDateColumn(Draggedparent);
+            UpDateColumn(this.Element.closest('.column'));
         }
     }
 }
